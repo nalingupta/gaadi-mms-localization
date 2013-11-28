@@ -1,5 +1,5 @@
 main: main.o vn200.o vncp_services.o MadgwickAHRS.o
-	gcc -pthread -o main main.o vn200.o vncp_services.o MadgwickAHRS.o -lrt -lm
+	gcc -pthread -o ahrs main.o vn200.o vncp_services.o MadgwickAHRS.o -lrt -lm
 
 main.o: main.c
 	gcc -c -Wall -I../vectorNav/include main.c
@@ -14,4 +14,4 @@ MadgwickAHRS.o: ./MadgwickAHRS.c
 	gcc -c ./MadgwickAHRS.c
 
 clean:
-	rm -rf *o main
+	rm -rf *o ahrs
