@@ -1,0 +1,16 @@
+build
+nbproject
+CMakeCache.txt
+.gitignore~
+cmake_install.cmake
+*o
+bin
+lib
+*.*~
+*.cpp~
+CMakeFiles
+.project
+.cproject
+.settings
+msg_gen
+bagfiles
